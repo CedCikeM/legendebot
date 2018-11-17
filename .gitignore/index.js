@@ -12,6 +12,6 @@ bot.login("NDUyODY3MzEwMjQ4Nzg3OTcw.DtIzmw.pMnUAf1cc6nW73IKoMinp7drMTo");
 
 bot.on('message', function (message) {
     if (message.content === '/info') {
-            message.channel.sendMessage("En Développement \n ========================= ");
+            message.channel.sendMessage("[**Bot en developpement**] \n \n **__En Développement__**");
     }
 } )
