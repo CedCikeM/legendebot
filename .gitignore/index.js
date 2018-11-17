@@ -12,7 +12,7 @@ bot.login("NDUyODY3MzEwMjQ4Nzg3OTcw.DtIzmw.pMnUAf1cc6nW73IKoMinp7drMTo");
 
 bot.on('message', function (message) {
     if (message.content === '/info') {
-            message.channel.sendMessage("[**information**] \n \n - ``/partenaire`` **Permé de voir les partenaires du serveur** \n\n ``/createur`` **Savoir qui à créer le bot mes on le sais touses");
+            message.channel.sendMessage("[**information**] \n \n - ``/partenaire`` **Permé de voir les partenaires du serveur** \n\n - ``/createur`` **Savoir qui à créer le bot mes on le sais touses");
     }
 } )
 
