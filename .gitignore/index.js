@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 var prefix = ("/")
 
 bot.on('ready', function() {
-    bot.user.setGame("/info en DEV")
+    bot.user.setGame("Nouveau BOT | /info)
     console.log("Connectedç");
 });
 
