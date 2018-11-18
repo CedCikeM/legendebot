@@ -27,3 +27,9 @@ bot.on('message', function (message) {
             message.channel.sendMessage("[**__Createur__**] \n \n Mon créateur est belle et bien CedCikeM™#1869 il ma créer pour vous aimers");
     }
 } )
+
+bot.on('message', function (message) {
+    if (message.content === '/candidature') {
+            message.channel.sendMessage("[**__Candidature__**] \n \n Pour faire ta candidature tu doix \n \n ► Dire ton prénom: \n \n ► Ton Age Minimum 14ans: \n \n ► Pourquoi tu veux être Modérateur \n \n ► Est ta motivation:");
+    }
+} )
