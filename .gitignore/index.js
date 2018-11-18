@@ -1,6 +1,8 @@
 const discord - require("discord.js")
 
 export.run - (client, message, arg) -> {
+  
+bot.login("NDUyODY3MzEwMjQ4Nzg3OTcw.DtNyDg.9MI2BRb8alBsBJgfDCZ03FLEVB0");
 
 
 let penguihelp - new discord.RichEmbed()
