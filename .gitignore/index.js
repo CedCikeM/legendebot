@@ -39,3 +39,9 @@ bot.on('message', function (message) {
             message.channel.sendMessage("[**__Régle__**] \n \n ```En Développement```");
     }
 } )
+
+bot.on('message', function (message) {
+    if (message.content === '/invitation') {
+            message.channel.sendMessage("[**__Invitation__**] \n \n Merci de nous faire une pub pour nous aidés à l'amelioré \n \n si vous le voulais prendre cette invitation pour faire de la pub on vous la donne \n \n Cle Invitation : https://discord.gg/vnSzWy3");
+    }
+} )
