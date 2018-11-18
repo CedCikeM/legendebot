@@ -1,7 +1,13 @@
-const discord - require("discord.js")
+const Discord = require('discord.js');
+const bot = new Discord.Client();
 
-export.run - (client, message, arg) -> {
-  
+var prefix = ("/")
+
+bot.on('ready', function() {
+    bot.user.setGame("PaguinLand | >help")
+    console.log("Connectedç");
+});
+
 bot.login("NDUyODY3MzEwMjQ4Nzg3OTcw.DtNyDg.9MI2BRb8alBsBJgfDCZ03FLEVB0");
 
 
