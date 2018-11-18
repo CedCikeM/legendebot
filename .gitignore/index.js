@@ -33,3 +33,9 @@ bot.on('message', function (message) {
             message.channel.sendMessage("[**__Candidature__**] \n \n à faire en MP discord a CedCikeM \n \n Pour faire ta candidature tu doix \n \n ► Dire ton prénom \n \n ► Ton Age Minimum 14ans \n \n ► Pourquoi tu veux être Modérateur \n \n ► Est ta motivation");
     }
 } )
+
+bot.on('message', function (message) {
+    if (message.content === '/règle') {
+            message.channel.sendMessage("[**__Règle__**] \n \n ```En Développement```");
+    }
+} )
