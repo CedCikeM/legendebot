@@ -29,7 +29,7 @@ bot.on('message', function (message) {
 } )
 
 bot.on('message', function (message) {
-    if (message.content === '/candidature') {
+    if (message.content === '/cv') {
             message.channel.sendMessage("[**__Candidature 2PLACE__**] \n \n à faire en MP discord a CedCikeM \n \n Pour faire ta candidature tu doix \n \n ► Dire ton prénom: \n \n ► Ton Age Minimum 14ans: \n \n ► Pourquoi tu veux être Modérateur \n \n ► Est ta motivation:");
     }
 } )
