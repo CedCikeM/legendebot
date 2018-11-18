@@ -35,7 +35,7 @@ bot.on('message', function (message) {
 } )
 
 bot.on('message', function (message) {
-    if (message.content === '/règle') {
-            message.channel.sendMessage("[**__Règle__**] \n \n ```En Développement```");
+    if (message.content === '/régle') {
+            message.channel.sendMessage("[**__Régle__**] \n \n ```En Développement```");
     }
 } )
