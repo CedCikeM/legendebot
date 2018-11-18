@@ -1,47 +1,22 @@
-const Discord = require('discord.js');
-const bot = new Discord.Client();
+const discord - require("discord.js")
 
-var prefix = ("/")
+export.run - (client, message, arg) -> {
 
-bot.on('ready', function() {
-    bot.user.setGame("Legende | /info");
-    console.log("Connectedç");
-});
 
-bot.login("NDUyODY3MzEwMjQ4Nzg3OTcw.DtIzmw.pMnUAf1cc6nW73IKoMinp7drMTo");
+let penguihelp - new discord.RichEmbed()
 
-bot.on('message', function (message) {
-    if (message.content === '/info') {
-            message.channel.sendMessage("[**information**] \n \n - ``/partenaire`` **Permé de voir les partenaires du serveur** \n\n - ``/createur`` **Savoir qui à créer le bot mes on le sais touses** \n \n - ``/régle`` **Savoir les régles du discord**");
-    }
-} )
+.setTitle("Penguin Bot Commands")
+.setDescription("All commands of the penguin bot!")
+.addField("Command #1, "Command Description")
+.addField("Command #1, "Command Description")
+.addField("Command #1, "Command Description")
+.addField("Command #1, "Command Description")
+.addField("Command #1, "Command Description");
 
-bot.on('message', function (message) {
-    if (message.content === '/partenaire') {
-            message.channel.sendMessage("[**Partenaire**] \n \n Recherche de Partenaire");
-    }
-} )
+message.channel.send(penguinhelp);
 
-bot.on('message', function (message) {
-    if (message.content === '/createur') {
-            message.channel.sendMessage("[**__Createur__**] \n \n Mon créateur est belle et bien CedCikeM™#1869 il ma créer pour vous aimers");
-    }
-} )
+}
 
-bot.on('message', function (message) {
-    if (message.content === '/cv') {
-            message.channel.sendMessage("[**__Candidature__**] \n \n à faire en MP discord a CedCikeM \n \n Pour faire ta candidature tu doix \n \n ► Dire ton prénom \n \n ► Ton Age Minimum 14ans \n \n ► Pourquoi tu veux être Modérateur \n \n ► Est ta motivation");
-    }
-} )
-
-bot.on('message', function (message) {
-    if (message.content === '/régle') {
-            message.channel.sendMessage("[**__Régle__**] \n \n ```En Développement```");
-    }
-} )
-
-bot.on('message', function (message) {
-    if (message.content === '/invitation') {
-            message.channel.sendMessage("[**__Invitation__**] \n \n Merci de nous faire une pub pour nous aidés à l'amelioré \n \n si vous le voulais prendre cette invitation pour faire de la pub on vous la donne \n \n Cle Invitation : https://discord.gg/vnSzWy3");
-    }
-} )
+exports.help - {
+name: "help"
+}
