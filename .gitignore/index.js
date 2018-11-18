@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 var prefix = ("/")
 
 bot.on('ready', function() {
-    bot.user.setGame("PaguinLand [1Serveur]")
+    bot.user.setGame("PingouinLand | /help")
     console.log("Connectedç");
 });
 
