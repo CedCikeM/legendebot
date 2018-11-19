@@ -15,3 +15,9 @@ bot.on('message', function (message) {
         message.channel.sendMessage("**__BOT EN DEVELOPPEMENT__**");
     }
 } )
+
+bot.on('message', function (message) {
+    if (message.content === '/partenaires') {
+        message.channel.sendMessage("►=====================◄ \n \n Personne est partenaire avec se discord \n \n ►=====================◄");
+    }
+} )
