@@ -11,7 +11,7 @@ bot.on('ready', function() {
 bot.login("NDUyODU0Mzg5MzUxMjUxOTg4.DtdBDQ.mxiwvSNwtHBFTBVkTwIBfs9VgmI");
 
 bot.on('message', function (message) {
-    if (message.content === '/help') {
+    if (message.content === 'r!help') {
         message.channel.sendMessage("**__BOT EN DEVELOPPEMENT__**");
     }
 } )
