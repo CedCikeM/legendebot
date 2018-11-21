@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-var prefix = ("/")
+var prefix = ("r!")
 
 bot.on('ready', function() {
-    bot.user.setGame("PingouinLand | /help")
+    bot.user.setGame("Regras Discord| /r!help")
     console.log("Connectedç");
 });
 
@@ -17,7 +17,7 @@ bot.on('message', function (message) {
 } )
 
 bot.on('message', function (message) {
-    if (message.content === '/partenaires') {
+    if (message.content === 'r!partenaires') {
         message.channel.sendMessage("►=====================◄ \n \n Personne est partenaire avec se discord \n \n ►=====================◄");
     }
 } )
