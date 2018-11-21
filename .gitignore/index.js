@@ -23,7 +23,7 @@ bot.on('message', function (message) {
 } )
 
 
-    static void UpdatePresence()
+static void UpdatePresence()
     {
         DiscordRichPresence discordPresence;
         memset(&discordPresence, 0, sizeof(discordPresence));
