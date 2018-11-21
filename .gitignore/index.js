@@ -24,7 +24,7 @@ bot.on('message', function (message) {
 
 
 static void UpdatePresence()
-    {
+{
         DiscordRichPresence discordPresence;
         memset(&discordPresence, 0, sizeof(discordPresence));
         discordPresence.state = "Regras";
@@ -39,4 +39,4 @@ static void UpdatePresence()
         discordPresence.spectateSecret = "MTIzNDV8MTIzNDV8MTMyNDU0";
         discordPresence.joinSecret = "MTI4NzM0OjFpMmhuZToxMjMxMjM= ";
         Discord_UpdatePresence(&discordPresence);
-    }
+}
