@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 var prefix = ("r!")
 
 bot.on('ready', function() {
-    bot.user.setGame("Regras Discord| /r!help")
+    bot.user.setGame("Regras Discord| r!help")
     console.log("Connectedç");
 });
 
