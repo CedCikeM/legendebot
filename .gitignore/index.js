@@ -44,7 +44,7 @@ client.on('message', async message => {
       .addField("*clear nombre", "Supprime le nombre de messages indiqué")
       .addField("*mute <@user>", "Mute l'utilisateur mentionné")
       .addField("*unmute <@user>", "Unmute l'utilisateur mentionné")
-      .setFooter("Commande modération - Tuto YouTube")
+      .setFooter("Commande modération")
       .setTimestamp()
       message.channel.send(mod_embed);
     }
@@ -57,7 +57,7 @@ client.on('message', async message => {
       .addField("Bonjour", "Le bot répond !")
       .addField("*stats", "Le bot vous envoie des informations sur votre profil !")
       .addField("*info", "Donne des indormations sur le bot et le serveur !")
-      .setFooter("Commande modération - Tuto YouTube")
+      .setFooter("Commande modération")
       .setTimestamp()
       message.channel.send(fun_embed);
     }
