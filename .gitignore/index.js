@@ -10,7 +10,7 @@ client.login("NDUyODU0Mzg5MzUxMjUxOTg4.DtdcRg.E7UU4v_IYDIQUnGNHmSbl0MWvxE");
 client.on("ready", () => {
 
     console.log("Je suis prêt !");
-    client.user.setGame("*help");
+    client.user.setGame("Regras | *help");
 
 });
 
