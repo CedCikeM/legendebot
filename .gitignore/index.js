@@ -10,7 +10,7 @@ client.login("NDUyODU0Mzg5MzUxMjUxOTg4.DtdcRg.E7UU4v_IYDIQUnGNHmSbl0MWvxE");
 client.on("ready", () => {
 
     console.log("Je suis prêt !");
-    client.user.setGame("TheKing | *help");
+    client.user.setGame("*h for help");
 
 });
 
@@ -21,7 +21,7 @@ client.on('message', async message => {
         console.log('Le bot dit bonjour');
     }
 
-    if(message.content === prefix + "help") {
+    if(message.content === prefix + "h") {
       var aide_embed = new Discord.RichEmbed()
       .setColor('RANDOM')
       .setTitle(`:robot: Voici mes catégories d'aide !`)
