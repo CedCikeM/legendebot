@@ -5,12 +5,12 @@ const client = new Discord.Client();
 
 var prefix = "*";
 
-client.login("NDUyODU0Mzg5MzUxMjUxOTg4.DtdcRg.E7UU4v_IYDIQUnGNHmSbl0MWvxE");
+client.login("NDUyODU0Mzg5MzUxMjUxOTg4.DtdcRg.E7UU4v_IYDIQUnGNHmSbl0MWvx");
 
 client.on("ready", () => {
 
     console.log("Je suis prêt !");
-    client.user.setGame("*h for help");
+    client.user.setGame("");
 
 });
 
