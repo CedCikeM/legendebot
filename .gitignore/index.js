@@ -56,7 +56,7 @@ client.on('message', async message => {
       .setThumbnail(message.author.avatarURL)
       .addField("Bonjour", "Le bot répond !")
       .addField("*stats", "Le bot vous envoie des informations sur votre profil !")
-      .addField("*info", "Donne des indormations sur le bot et le serveur !")
+      .addField("*info", "Donne des informations sur le bot et le serveur !")
       .setFooter("Commande modération")
       .setTimestamp()
       message.channel.send(fun_embed);
