@@ -10,7 +10,7 @@ client.login("NDUyODU0Mzg5MzUxMjUxOTg4.DuQEpw.-Tm5cMUoGLrv59eotI8e_fFLKqA");
 client.on("ready", () => {
 
     console.log("Je suis prêt !");
-    client.user.setGame("*h | 1servers");
+    client.user.setGame("Nouveau BOT SPIKIER !");
 
 });
 
