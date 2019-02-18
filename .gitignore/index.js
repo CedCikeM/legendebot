@@ -48,6 +48,13 @@ client.on('message', message => {
   }
 });
 client.on('message', message => {
+  // If the message is "ping"
+  if (message.content === '/modo') {
+    // Send "pong" to the same channel
+    message.channel.send('[Recrutement Guide] \n \n âge (14ans maximum) : \n \n Présentation sur discord : \n \n C'est tu développer un bot ? : \n \n Pourquoi toi et pas un autre ? : \n \n Mot de fin : \n \n Toute candidature copyer colé seront pas accepté \n \n @everyone ');
+  }
+});
+client.on('message', message => {
   // Ignore messages that aren't from a guild
   if (!message.guild) return;
 
