@@ -3,7 +3,7 @@
  */
 
 // Import the discord.js module
-const Discord = require('discord.');
+const Discord = require('discord.js');
 
 // Create an instance of a Discord client
 const client = new Discord.Client();
@@ -15,7 +15,7 @@ const client = new Discord.Client();
 client.on("ready", () => {
 
     console.log("Je suis prêt !");
-    client.user.setGame("[/help] Rhilia");
+    client.user.setGame("Connéction 0.2");
 
 });
 client.on('message', message => {
