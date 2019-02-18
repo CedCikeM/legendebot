@@ -49,6 +49,13 @@ client.on('message', message => {
 });
 client.on('message', message => {
   // If the message is "ping"
+  if (message.content === '/ajout') {
+    // Send "pong" to the same channel
+    message.channel.send('```\nAjout Mee6 0.1 : \n\n-Ajout de la commande !verif : vah te peremètre dêtre vétifier  \n```\n\n @everyone');
+  }
+});
+client.on('message', message => {
+  // If the message is "ping"
   if (message.content === '/modo') {
     // Send "pong" to the same channel
     message.channel.send('[Recrutement Guide] \n \n âge (14ans maximum) : \n \n Présentation sur discord : \n \n C est tu développer un bot ? : \n \n Pourquoi toi et pas un autre ? : \n \n Mot de fin : \n \n Toute candidature copyer colé seront pas accepté \n \n @everyone');
