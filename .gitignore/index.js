@@ -429,3 +429,16 @@ if(!message.guild.member(message.author).hasPermission("MANAGE_GUILD")) return m
   }
 
 });
+client.on('ready', () => {
+  console.log('I am ready!');
+});
+
+// Create an event listener for new guild members
+client.on('guildMemberAdd', member => {
+  // Send the message to a designated channel on a server:
+  const channel = member.guild.channels.find(ch => ch.name === 'member-log');
+  // Do nothing if the channel wasn't found on this server
+  if (!channel) return;
+  // Send the message, mentioning the member
+  channel.send(`${member} à rejoint le serveur`);
+});
