@@ -30,7 +30,8 @@ client.on('message', message => {
   // If the message is "ping"
   if (message.content === '/help') {
     // Send "pong" to the same channel
-    message.channel.send('============\n **- /kick <mention> - kick un membre perm modérateur** \n============');
+    message.channel.send('bot en developpement allez dans #update pour voir les nouvelles commandes');
+  }
 });
 client.on('message', message => {
   // If the message is "ping"
