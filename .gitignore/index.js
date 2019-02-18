@@ -34,23 +34,6 @@ client.on('message', message => {
   }
 });
 client.on('message', message => {
-  // If the message is "how to embed"
-  if (message.content === '/test') {
-    // We can create embeds using the MessageEmbed constructor
-    // Read more about all that you can do with the constructor
-    // over at https://discord.js.org/#/docs/main/stable/class/RichEmbed
-    const embed = new RichEmbed()
-      // Set the title of the field
-      .setTitle('A slick little embed')
-      // Set the color of the embed
-      .setColor(0xFF0000)
-      // Set the main content of the embed
-      .setDescription('Hello, this is a slick embed!');
-    // Send the embed to the same channel as the message
-    message.channel.send(embed);
-  }
-});
-client.on('message', message => {
   // If the message is "ping"
   if (message.content === '/discord') {
     // Send "pong" to the same channel
@@ -77,9 +60,6 @@ client.on('message', message => {
     // Send "pong" to the same channel
     message.channel.send('[Recrutement Guide] \n \n âge (14ans maximum) : \n \n Présentation sur discord : \n \n C est tu développer un bot ? : \n \n Pourquoi toi et pas un autre ? : \n \n Mot de fin : \n \n Toute candidature copyer colé seront pas accepté \n \n @everyone');
   }
-});
-client.on('ready', () => {
-  console.log('I am ready!');
 });
 
 // Create an event listener for messages
