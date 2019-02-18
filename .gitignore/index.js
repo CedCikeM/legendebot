@@ -30,8 +30,7 @@ client.on('message', message => {
   // If the message is "ping"
   if (message.content === '/help') {
     // Send "pong" to the same channel
-    message.channel.send('__============__\n **BOT en développement** \n__============__');
-  }
+    message.channel.send('============\n **- /kick <mention> - kick un membre perm modérateur** \n============');
 });
 client.on('message', message => {
   // If the message is "ping"
@@ -45,7 +44,7 @@ client.on('message', message => {
   if (!message.guild) return;
 
   // If the message content starts with "!kick"
-  if (message.content.startsWith('!kick')) {
+  if (message.content.startsWith('/kick')) {
     // Assuming we mention someone in the message, this will return the user
     // Read more about mentions over at https://discord.js.org/#/docs/main/stable/class/MessageMentions
     const user = message.mentions.users.first();
