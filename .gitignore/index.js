@@ -35,6 +35,13 @@ client.on('message', message => {
 });
 client.on('message', message => {
   // If the message is "ping"
+  if (message.content === '/discord') {
+    // Send "pong" to the same channel
+    message.channel.send('```nous recherchons un développeur discord```');
+  }
+});
+client.on('message', message => {
+  // If the message is "ping"
   if (message.content === '/update0.1') {
     // Send "pong" to the same channel
     message.channel.send('```\nUpdate 0.1 : \n\n-Ajout de la commande /kick : permes de kick un membre du discord \n```\n\n @everyone');
