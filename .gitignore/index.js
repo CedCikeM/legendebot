@@ -26,7 +26,8 @@ client.on('message', async message => {
         .setTitle("Voici mes commandes d'aides :D")
         .setDescription("Voici mes commandes disponible !")
         .addField("/aide", "Affiche les commandes du bot")
-		.addField("/clear", "Clear le chat (perm modérateur)")
+	.addField("/clear", "Clear le chat (perm modérateur)")
+	.addField("/info", "Information Bot + Discord")
         .addField("Bonjour", "Le bot répond")
         .setFooter("Menu d'aide")
         message.channel.send(help_embed);
