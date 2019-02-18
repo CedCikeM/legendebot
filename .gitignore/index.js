@@ -42,9 +42,9 @@ client.on('message', message => {
 });
 client.on('message', message => {
   // If the message is "ping"
-  if (message.content === '/update0.1') {
+  if (message.content === '/update0.2') {
     // Send "pong" to the same channel
-    message.channel.send('```\nUpdate 0.1 : \n\n-Ajout de la commande /kick : permes de kick un membre du discord \n```\n\n @everyone');
+    message.channel.send('```\nUpdate 0.2 : \n\n-Ajout de la commande /avatar : permes de mètre sont avatar dans le channel \n```\n\n @everyone');
   }
 });
 client.on('message', message => {
@@ -52,6 +52,18 @@ client.on('message', message => {
   if (message.content === '/modo') {
     // Send "pong" to the same channel
     message.channel.send('[Recrutement Guide] \n \n âge (14ans maximum) : \n \n Présentation sur discord : \n \n C est tu développer un bot ? : \n \n Pourquoi toi et pas un autre ? : \n \n Mot de fin : \n \n Toute candidature copyer colé seront pas accepté \n \n @everyone');
+  }
+});
+client.on('ready', () => {
+  console.log('I am ready!');
+});
+
+// Create an event listener for messages
+client.on('message', message => {
+  // If the message is "what is my avatar"
+  if (message.content === '/avatar') {
+    // Send the user's avatar URL
+    message.reply(message.author.avatarURL);
   }
 });
 client.on('message', message => {
