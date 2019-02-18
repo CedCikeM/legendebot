@@ -457,11 +457,11 @@ client.on('guildMemberAdd', member => {
 });
 client.on('message', msg => {
   if (msg.content === '/gmc') {
-    msg.reply('${member} c est mit en gamemode creative');
+    msg.reply('c est mit en gamemode creative');
   }
 });
 client.on('message', msg => {
   if (msg.content === '/gms') {
-    msg.reply('${member} c est mit en gamemode survival');
+    msg.reply('c est mit en gamemode survival');
   }
 });
