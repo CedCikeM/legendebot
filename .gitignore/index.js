@@ -455,3 +455,13 @@ client.on('guildMemberAdd', member => {
   // Send the message, mentioning the member
   channel.send(`Nouveau Membre !! ${member}`);
 });
+client.on('message', msg => {
+  if (msg.content === '/gmc') {
+    msg.reply('${member} c est mit en gamemode creative');
+  }
+});
+client.on('message', msg => {
+  if (msg.content === '/gms') {
+    msg.reply('${member} c est mit en gamemode survival');
+  }
+});
