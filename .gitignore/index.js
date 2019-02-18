@@ -15,7 +15,7 @@ const client = new Discord.Client();
 client.on("ready", () => {
 
     console.log("Je suis prêt !");
-    client.user.setGame("Connéction 0.2");
+    client.user.setGame("Dev 0.3");
 
 });
 client.on('message', message => {
