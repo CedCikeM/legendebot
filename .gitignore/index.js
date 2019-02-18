@@ -4,6 +4,12 @@
 
 // Import the discord.js module
 const Discord = require('discord.js');
+tttttttsdffqs*
+    fds
+fds
+fsd
+sd
+
 
 // Create an instance of a Discord client
 const client = new Discord.Client();
