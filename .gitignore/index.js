@@ -9,7 +9,7 @@ client.login("NTQ2ODQzODIyNTI5OTcwMTk2.D0ythA.Ky6m0nJ_IZz1Dhvw_M6zM-NAYfI");
 client.on("ready", () => {
 
     console.log("Je suis prêt !");
-    client.user.setGame("(/aide)");
+    client.user.setGame("Createur CedCikeM");
 
 });
 
